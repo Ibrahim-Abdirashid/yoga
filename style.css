@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Anybody", sans-serif;
+  background-color: #dfdfd8;
+}
+img{
+    max-width: 100%;
+}
+.container {
+  width: min(90%, 1120px);
+  margin-inline: auto;
+}
+header {
+  background-color: #fafaf6;
+  height: 4.5rem;
+  position: sticky;
+  width: 100%;
+  top:0;
+}
+.desktop-menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menus-link {
+  display: flex;
+  gap: 1.5rem;
+}
+.menus-link li {
+  list-style: none;
+}
+.menus-link li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgb(43, 43, 43);
+}
+.menus-link li a:hover {
+  color: rgb(95, 106, 212);
+}
+.desktop-menu h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.humburger {
+  display: none;
+}
+
+/* mobile menu */
+.mopile-menu {
+  display: none;
+}
+
+/* styling hero section */
+.hero{
+    height: calc(100vh - 4.5rem);
+    /* background-color: aquamarine; */
+}
+.hero{
+    background:linear-gradient(to right, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHlvZ2F8ZW58MHx8MHx8fDA%3D") center/ cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-container h1{
+    font-size: 5rem;
+    color:#fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 5rem;
+}
+.hero-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-btn{
+  padding: 0.99rem 3.8rem;
+  font-size: 1.82rem;
+  background-color: #5f6ad4;
+  color:#fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor:pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.hero-btn:hover{
+  background-color: #fafaf6;
+  color: #000;
+}
+.yoga{
+  background:linear-gradient(rgba(169, 169, 169, 0.4), rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1606663485553-432d79af0620?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHlvZ2F8ZW58MHx8MHx8fDA%3D")center / cover no-repeat;
+  height: 90vh;
+  margin-top: 6rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+.yoga .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 728px;
+  margin-inline: auto;
+  margin-bottom: 7rem;
+  gap: 1rem;
+  text-align: center;
+
+}
+.yoga .content h1{
+  text-transform: uppercase;
+  font-size:3.2rem ;
+  font-weight: 700;
+  color: #fff;
+}
+.yoga .content p{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* styling the boxs */
+.info-boxs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-block: 6rem;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+.box img{
+  /* width: 550px; */
+  height: 350px;
+  border-radius: 1rem;
+}
+.box h1{
+  font-size: 1.6rem;
+  color: #2b2b2b;
+}
+.box p{
+  font-size: 1.25rem;
+  color: #646464;
+}
+
+
+/* styling of the part of perfect condition */
+.perfect-condition{
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1561577732-25eb21f22bdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHlvZ2F8ZW58MHx8MHx8fDA%3D")top/ cover no-repeat;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment:fixed ;
+}
+.perfect-condition h2{
+  color:#fff ;
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.perfect-condition p{
+  color: #fafaf6;
+  font-size:1.25rem ;
+  font-weight: 400;
+
+}
+/* blog styling */
+.blogs-h{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 7rem;
+}
+.blogs{
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.blog{
+  text-align: center;
+}
+.blog img{
+  height: 350px;
+}
+.blog-btn,.yoga-btn {
+  padding: 0.99rem 3rem;
+  font-size: 1.5rem;
+  background-color: #5f6ad4;
+  color:#fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor:pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+/* last section */
+
+.yoga-classes{
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1611077094722-c2e485434fce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjExfHx5b2dhfGVufDB8fDB8fHww")center/ cover no-repeat;
+  height: 22.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 8rem;
+}
+.yoga-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafaf6;
+  padding:3rem  2rem;
+  border-radius: 1rem;
+  border: 1px solid #5f6ad4;
+  margin-top: ;
+}
+.yoga-box h1{
+  font-size:1.5rem ;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* FOOTER */
+footer{
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+
+
+/* halkan waa responsive-ka marka la sameyo mobile menu */
+@media (max-width: 780px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  header {
+    background-color: #fafaf6;
+    height: 0;
+    top:2rem;
+  }
+  i{
+    z-index: 1111;
+  }
+  .humburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #5f6ad4;
+    color: #fff;
+    top: 5%;
+    right: 5%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+  }
+  .mopile-menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+    position: fixed;
+    inset: 0 0 0 0;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
+
+  }
+  .mopile-menu[data-visible="false"] {
+    transform: translateX(100%);
+}
+.humburger i[data-visible="true"]{
+    display: block;
+}
+
+.humburger i[data-visible="false"]{
+    display: none;
+}
+  .navigation h1{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .mopile-menu .navigation {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .mopile-menu .navigation .menus-link {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+  .mopile-menu .navigation .menus-link a {
+    color: #fff;
+  }
+  .mopile-menu .mopile-menu-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 85%;
+  }
+  .mopile-menu .mopile-menu-btn a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.5rrem;
+
+  }
+  .primary-btn, .secondery-btn{
+    /* display: inline-block; */
+    background-color: #5f6ad4;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin: 0.4rem;
+    text-align: center;
+    
+  }
+  .secondery-btn{
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  .hero{
+    height: 100vh;
+  }
+  .hero h1{
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  }
+  .hero-btn{
+    font-size: 1.2rem;
+  }
+  .yoga .content{
+    margin-bottom: 2rem;
+
+  }
+  .yoga .content h1{
+    font-size:2.125rem ;
+    
+  }
+  .yoga .content p{
+    padding: 0.7rem;
+    font-size: 1.3125rem;
+  }
+  .info-boxs{
+    grid-template-columns: 1fr;
+  }
+  /* perfect section */
+  .perfect-condition h2{
+    font-size:2rem;
+  }
+  .perfect-condition p{
+    font-size:1.1rem ;
+    
+  
+  }
+  /* blogs */
+  .blogs{
+  grid-template-columns: 1fr;
+  
+  }
+  /* last section */
+  .yoga-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafaf6;
+  padding:3rem  2rem;
+  border-radius: 1rem;
+  border: 1px solid #5f6ad4;
+}
+.yoga-box h1{
+  font-size:1rem ;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+  .yoga-btn{
+  padding: 0.99rem 3.5rem;
+  font-size: 1.5rem;
+  background-color: #5f6ad4;
+  color:#fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor:pointer;
+  transition: background-color 0.5s ease-in-out;
+  }
+
+  
+}
